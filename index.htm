@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羮腻乎_博客</title>
+    <script>
+        function sortList(order) {
+            // 获取<ul>元素
+            const ul = document.getElementById("myList");
+            // 获取所有<li>元素并转换为数组
+            const liArray = Array.from(ul.getElementsByTagName("li"));
+            // 根据顺序或逆序对<li>元素进行排序
+            liArray.sort((a, b) => {
+                if (order === "asc") {
+                    return liArray.indexOf(a) - liArray.indexOf(b); // 升序
+                } else {
+                    return liArray.indexOf(b) - liArray.indexOf(a); // 降序
+                }
+            });
+            // 清空<ul>元素
+            ul.innerHTML = "";
+            // 将排序后的<li>元素重新添加到<ul>中
+            liArray.forEach(li => ul.appendChild(li));
+        }
+    </script>
+</head>
+<body>
+<h1>Deadly 新浪博客</h1>
+<br/>
+<br/>
+<hr/>
+<table><tr><td valign="top"><br>somethting list menu left here</td>
+<td>
+    <ul id="myList">
+<li><a href="63.htm">电脑知识3</a></li>
+<li><a href="63.htm">电脑知识1</a></li>
+<li><a href="63.htm">电脑知识</a></li>
+<li><a href="63.htm">卦第五十三</a></li>
+<li><a href="63.htm">卦第三十六</a></li>
+<li><a href="63.htm">文艺无用论</a></li>
+<li><a href="63.htm">2017/1/3</a></li>
+<li><a href="63.htm">noname</a></li>
+<li><a href="63.htm">logo</a></li>
+<li><a href="63.htm">Base64算法,和周易64卦的联想</a></li>
+<li><a href="63.htm">2012-10-27[晚上]刷Android模拟器…</a></li>
+<li><a href="63.htm">http://www.360doc.com/content/12…</a></li>
+<li><a href="63.htm">cad-totuial</a></li>
+<li><a href="63.htm">企业简介</a></li>
+<li><a href="63.htm">历史惊人的相似</a></li>
+<li><a href="63.htm">P&G_Summary</a></li>
+<li><a href="63.htm">党中央的政策亚克西</a></li>
+<li><a href="63.htm">采矿专业新安矿定向生挂职锻炼进程…</a></li>
+<li><a href="63.htm">国人cg</a></li>
+<li><a href="63.htm">你有VISA吗</a></li>
+<li><a href="63.htm">How to add any song to Guitar He…</a></li>
+<li><a href="63.htm">吉他英雄3，添加自制的歌曲</a></li>
+<li><a href="63.htm">吃饭吃出蛆</a></li>
+<li><a href="63.htm">Leopard_hd_install_helper_v0.3硬…</a></li>
+<li><a href="63.htm">实况8 双人键盘</a></li>
+<li><a href="63.htm">苏小雨</a></li>
+<li><a href="63.htm">苏小雨</a></li>
+<li><a href="63.htm">金山通行证申请精灵1.11</a></li>
+<li><a href="63.htm">Basic BIOS password crack</a></li>
+<li><a href="63.htm">我的收藏</a></li>
+<li><a href="63.htm">1250</a></li>
+<li><a href="63.htm">http://www.mine.cemr.wvu.edu/ugr…</a></li>
+<li><a href="63.htm">TCL 2911DZ二次开机后指示灯熄灭,…</a></li>
+<li><a href="63.htm">国二过了</a></li>
+<li><a href="63.htm">矿山开采技术</a></li>
+<li><a href="63.htm">날아라슈퍼보드</a></li>
+<li><a href="63.htm">s</a></li>
+<li><a href="63.htm">啊六级没过去</a></li>
+<li><a href="63.htm">Realtek high definition audio (A…</a></li>
+<li><a href="63.htm">黑龙江ATC</a></li>
+<li><a href="63.htm">vs骗局2</a></li>
+<li><a href="63.htm">vs骗局</a></li>
+<li><a href="63.htm">xinanfiles</a></li>
+<li><a href="63.htm">日记 [2008年03月03日]</a></li>
+<li><a href="63.htm">2007年12月CET考试成绩发布！</a></li>
+<li><a href="63.htm">Era-The Mass</a></li>
+<li><a href="63.htm">影印软件</a></li>
+<li><a href="63.htm">我们这代星际人</a></li>
+<li><a href="63.htm">vml shape path的研究</a></li>
+<li><a href="63.htm">我的第一个3d人模</a></li>
+<li><a href="63.htm">东邪西毒___ 天地孤影任我行</a></li>
+<li><a href="63.htm">小楷离骚经</a></li>
+<li><a href="63.htm">帮忙找这种书法</a></li>
+<li><a href="63.htm">全日制普通高级中学教科书（必修）…</a></li>
+<li><a href="63.htm">95版插曲</a></li>
+<li><a href="63.htm">湖</a></li>
+<li><a href="63.htm">采矿工程师</a></li>
+<li><a href="63.htm">注册结构工程师</a></li>
+<li><a href="63.htm">Neon Genesis Evangelion 2005</a></li>
+<li><a href="63.htm">回旋鏢</a></li>
+<li><a href="63.htm">noname</a></li>
+<li><a href="63.htm">有意思</a></li>
+<li><a href="63.htm">雪夜</a></li>
+    </ul>
+    <button onclick="sortList('asc')">升序</button>
+    <button onclick="sortList('desc')">降序</button>
+</td>
+</table>
+<hr/>
+<center><h3>copy right</h3></center>
+<br><br><br>
+</body>
+</html>
