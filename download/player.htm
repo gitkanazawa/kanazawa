@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>本地播放器</title>
+    <style>
+        video {
+            width: 100%; height: auto; background: #000;
+        }
+    </style>
+</head>
+<body>
+    <video id="v" controls></video>
+
+<script>
+var v = document.getElementById('v');
+var url = 'http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd04';
+
+if (v.canPlayType('application/vnd.apple.mpegurl')) {
+    v.src = url;
+} else {
+    var script = document.createElement('script');
+    script.src = 'https://lf-cdn-tos.bytecdntp.com/cdn/expire-100-M/hls.js/1.4.12/hls.min.js';
+    script.onload = function(){
+        var hls = new Hls();
+        hls.loadSource(url);
+        hls.attachMedia(v);
+    };
+    document.head.appendChild(script);
+}
+</script>
+</body>
+</html>
