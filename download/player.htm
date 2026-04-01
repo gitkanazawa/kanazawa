@@ -20,7 +20,7 @@ if (v.canPlayType('application/vnd.apple.mpegurl')) {
     v.src = url;
 } else {
     var script = document.createElement('script');
-    script.src = 'https://lf-cdn-tos.bytecdntp.com/cdn/expire-100-M/hls.js/1.4.12/hls.min.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/hls.js@latest';
     script.onload = function(){
         var hls = new Hls();
         hls.loadSource(url);
